@@ -175,11 +175,11 @@ h6{font-size: 16px;}
 }
 
 #pink-mode{
-  background-color:palevioletred;
+  background-color:#d87093;
 }
 
 #green-mode{
-  background-color: #78866b;
+  background-color: rgb(120, 134, 107);
 }
 
 #dark-mode{
@@ -188,6 +188,18 @@ h6{font-size: 16px;}
 
 .right-column{
   grid-area: right-column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#preview{
+  width: 300px;
+  border: 1.5px solid black;
+  padding: 15px;
+
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 }
 
 @media screen and (max-width: 1200px) {
