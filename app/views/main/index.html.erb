@@ -1,41 +1,12 @@
 <section class="s1">
   <div class="main-container">
     <div class="greeting-wrapper">
-      <h1>Hi, I'm Daniel Nguyen</h1>
+      <h1>Daniel Nguyen</h1>
     </div>
     <div class="intro-wrapper">
-      <div class="nav-wrapper">
-        <div class="dots-wrapper">
-          <div id="dot-1" class="browser-dot">
-
-          </div>
-          <div id="dot-2" class="browser-dot">
-
-          </div>
-          <div id="dot-3" class="browser-dot">
-
-          </div>
-        </div>
-        <ul id="navigation">
-          <li>
-            <%=link_to 'Contact', root_path %>
-          </li>
-        </ul>
-      </div>
       <div class="left-column">
-        <%= image_tag 'daniel.jpg', id: 'profile-pic' %>
-        <div class="theme">
-          <h5 class="subheader">Choose a theme</h5>
-          <div id="theme-options-wrapper">
-            <div id="light-mode" class="theme-dot">
-            </div>
-            <div id="dark-mode" class="theme-dot">
-            </div>
-            <div id="pink-mode" class="theme-dot">
-            </div>
-            <div id="green-mode" class="theme-dot">
-            </div>
-          </div>
+        <div class="prof-box">
+          <div class="profile-"><%= image_tag 'daniel.jpg', id: 'profile-pic' %></div>
         </div>
       </div>
       <div class="right-column">
@@ -43,8 +14,11 @@
           <h3>Hello world!</h3>
           <p>I am a software developer aiming to deliver innovative products that help people.</p>
         </div>
+        <%= link_to image_tag('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', size: '30x30'), 'github', class: 'social-link' %>
+        <%= link_to image_tag('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg', size: '30x30'), 'linkedin', class: 'social-link' %>
       </div>
     </div>
+  </div>
   </div>
 </section>
 
@@ -128,3 +102,19 @@
   </div>
 </section>
 
+
+
+
+<%# <div class="theme">
+          <h5 class="subheader">Choose a theme</h5>
+          <div id="theme-options-wrapper">
+            <div id="light-mode" class="theme-dot">
+            </div>
+            <div id="dark-mode" class="theme-dot">
+            </div>
+            <div id="pink-mode" class="theme-dot">
+            </div>
+            <div id="green-mode" class="theme-dot">
+            </div>
+          </div>
+        </div> %>
