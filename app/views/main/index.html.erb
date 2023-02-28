@@ -1,26 +1,65 @@
-<section class="s1">
-  <div class="main-container">
-    <div class="greeting-wrapper">
-      <h1>Daniel Nguyen</h1>
-    </div>
-    <div class="intro-wrapper">
-      <div class="left-column">
-        <div class="prof-box">
-          <div class="profile-"><%= image_tag 'daniel.jpg', id: 'profile-pic' %></div>
+<nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Daniel Nguyen</a>
+    <div class="theme">
+      <div id="theme-options-wrapper">
+        <div id="light-mode" class="theme-dot">
+        </div>
+        <div id="dark-mode" class="theme-dot">
+        </div>
+        <div id="pink-mode" class="theme-dot">
+        </div>
+        <div id="green-mode" class="theme-dot">
         </div>
       </div>
-      <div class="right-column">
-        <div id="preview">
-          <h3>Hello world!</h3>
-          <p>I am a software developer aiming to deliver innovative products that help people.</p>
+  </div>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="--bs-scroll-height: 100px;">
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-list"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><button class="dropdown-item" type="button">About Me</button></li>
+            <li><button class="dropdown-item" type="button">Work</button></li>
+            <li><button class="dropdown-item" type="button">Projects</button></li>
+            <li><button class="dropdown-item" type="button">Contact</button></li>
+          </ul>
         </div>
-        <%= link_to image_tag('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', size: '30x30'), 'github', class: 'social-link' %>
-        <%= link_to image_tag('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg', size: '30x30'), 'linkedin', class: 'social-link' %>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="theme">
+  <div id="theme-options-wrapper">
+    <div id="light-mode" class="theme-dot">
+    </div>
+    <div id="dark-mode" class="theme-dot">
+    </div>
+    <div id="pink-mode" class="theme-dot">
+    </div>
+    <div id="green-mode" class="theme-dot">
+    </div>
+  </div>
+</div>
+
+
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row align-items-center g-5 py-5">
+      <div class="col-lg-6">
+        <h3>Hello world</h3>
+        <p>I'm Daniel Nguyen, a software developer aiming to deliver innovative products that help people.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <%= link_to image_tag('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', size: '30x30'), 'github' %>
+          <%= link_to image_tag('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg', size: '30x30'), 'linkedin' %>
+        </div>
+      </div>
+      <div class="col-10 col-sm-8 col-lg-6">
+        <%= image_tag 'daniel.jpg', id: 'profile-pic' %>
       </div>
     </div>
   </div>
-  </div>
-</section>
 
 <section class="s2">
   <div class="main-container">
@@ -32,7 +71,7 @@
         <p>When I'm not coding, you can usually find me being active. I love playing tennis, hiking in nature, cooking up new recipes, and exploring new destinations.</p>
       </div>
       <hr>
-      <h4>Resume</h4>
+      <h4>Work</h4>
       <p>Fullstack web developer specializing in Javascript, React, and Ruby on Rails: </p>
       <span>
         <%= link_to 'Download resume', target:'_blank' %> /
@@ -101,20 +140,3 @@
     Contact
   </div>
 </section>
-
-
-
-
-<%# <div class="theme">
-          <h5 class="subheader">Choose a theme</h5>
-          <div id="theme-options-wrapper">
-            <div id="light-mode" class="theme-dot">
-            </div>
-            <div id="dark-mode" class="theme-dot">
-            </div>
-            <div id="pink-mode" class="theme-dot">
-            </div>
-            <div id="green-mode" class="theme-dot">
-            </div>
-          </div>
-        </div> %>
