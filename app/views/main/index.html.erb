@@ -25,7 +25,7 @@
       <div class="left-column">
         <%= image_tag 'daniel.jpg', id: 'profile-pic' %>
         <div class="theme">
-          <h5 id="choose-theme">Choose a theme</h5>
+          <h5 class="subheader">Choose a theme</h5>
           <div id="theme-options-wrapper">
             <div id="light-mode" class="theme-dot">
             </div>
@@ -40,7 +40,7 @@
       </div>
       <div class="right-column">
         <div id="preview">
-          <h3>What I Do</h3>
+          <h3>Hello world!</h3>
           <p>I am a software developer aiming to deliver innovative products that help people.</p>
         </div>
       </div>
@@ -53,18 +53,72 @@
     <div class="about-wrapper">
       <div class="about-me">
         <h4>About Me</h4>
-        <p>I'm a former teacher with over 10 years of experience in public schools, now making a transition into tech. Having witnessed firsthand the impact that technology can have in the classroom, I am passionate about the potential of digital innovation to transform education and improve outcomes for learners of all ages.</p>
+        <p>I'm a former teacher with over 10 years of experience in public schools, now making a transition into tech. Having witnessed firsthand the impact that technology can have in the classroom, I am motivated by the potential of digital innovation to transform education and improve outcomes for learners of all ages.</p>
         <p>My goal is to use technology to solve problems and create solutions that can make a real difference in people's lives. I am excited to bring my perspective and experience to the tech industry and look forward to learning and growing in this new chapter of my career.</p>
         <p>When I'm not coding, you can usually find me being active. I love playing tennis, hiking in nature, cooking up new recipes, and exploring new destinations.</p>
       </div>
-      <div class="social-links"></div>
+      <hr>
+      <h4>Resume</h4>
+      <p>Fullstack web developer specializing in Javascript, React, and Ruby on Rails: </p>
+      <span>
+        <%= link_to 'Download resume', target:'_blank' %> /
+        <%= link_to 'View online', root_path %>
+      </span>
+      <div id="skills">
+        <ul>
+          <h5>Languages</h5>
+          <li><i class="devicon-javascript-plain colored"></i> Javascript</li>
+          <li><i class="devicon-css3-plain colored"></i> CSS</li>
+          <li><i class="devicon-html5-plain colored"></i> HTML</li>
+          <li><i class="devicon-ruby-plain colored"></i> Ruby</li>
+          <li><i class="devicon-python-plain colored"></i> Python</li>
+          <li><i class="devicon-postgresql-plain colored"></i> SQL(PostgreSQL)</li>
+        </ul>
+        <ul>
+          <h5>Frameworks</h5>
+          <li><i class="devicon-rails-plain colored"></i> Rails</li>
+          <li><i class="devicon-react-original colored"></i> React</li>
+          <li><i class="devicon-express-original colored"></i> Express</li>
+          <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap</li>
+          <li><i class="devicon-nodejs-plain colored"></i> NodeJS</li>
+        </ul>
+        <ul>
+          <h5>Dev Tools</h5>
+        </ul>
+      </div>
+      <div class="social-links">
+        links
+      </div>
     </div>
   </div>
 </section>
 
 <section class="s1">
   <div class="main-container">
-    Portfolio
+    <h3 class="subheader">Some of my past projects</h3>
+    <div class="post-wrapper">
+      <div class="post">
+        <img class="thumbnail" src=".jpg">
+        <div class="post-preview">
+          <h6 class="post-title">Title</h6>
+          <p class="post-intro">Text</p>
+        </div>
+      </div>
+      <div class="post">
+        <img class="thumbnail" src=".jpg">
+        <div class="post-preview">
+          <h6 class="post-title">Title</h6>
+          <p class="post-intro">Text</p>
+        </div>
+      </div>
+      <div class="post">
+        <img class="thumbnail" src=".jpg">
+        <div class="post-preview">
+          <h6 class="post-title">Title</h6>
+          <p class="post-intro">Text</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
