@@ -18,6 +18,12 @@ p, li, span, label, input, textarea{
   font-family: 'Roboto Mono', monospace;
 }
 
+.navbar-brand{
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  transform: rotate(-8deg);
+}
+
 a{
   text-decoration: none;
   color: #17a2b8;
