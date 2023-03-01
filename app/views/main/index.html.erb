@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Daniel Nguyen</a>
+    <a class="navbar-brand" href="#">DN</a>
     <div class="theme">
       <div id="theme-options-wrapper">
         <div id="light-mode" class="theme-dot">
@@ -13,8 +13,8 @@
         </div>
       </div>
   </div>
-    <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="--bs-scroll-height: 100px;">
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto my-2 my-lg-0">
         <div class="btn-group">
           <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="bi bi-list"></i>
@@ -31,112 +31,122 @@
   </div>
 </nav>
 
-<div class="theme">
-  <div id="theme-options-wrapper">
-    <div id="light-mode" class="theme-dot">
+<div class="container col-xxl-8 px-4 py-5 border-bottom">
+  <div class="row flex-lg-row align-items-center g-5 py-5">
+    <div class="col-lg-6">
+      <h3>Hello world</h3>
+      <p>I'm Daniel Nguyen, a software developer aiming to deliver innovative products that help people.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <%= link_to image_tag('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', size: '30x30'), 'github' %>
+        <%= link_to image_tag('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg', size: '30x30'), 'linkedin' %>
+      </div>
     </div>
-    <div id="dark-mode" class="theme-dot">
-    </div>
-    <div id="pink-mode" class="theme-dot">
-    </div>
-    <div id="green-mode" class="theme-dot">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <%= image_tag 'daniel.jpg', id: 'profile-pic' %>
     </div>
   </div>
 </div>
 
+<div class="container px-4 py-5 border-bottom">
+  <div class="about-me">
+    <h4>About Me</h4>
+    <p>I'm a former teacher with over 10 years of experience in public schools, now making a transition into tech. Having witnessed firsthand the impact that technology can have in the classroom, I am motivated by the potential of digital innovation to transform education and improve outcomes for learners of all ages.</p>
+    <p>My goal is to use technology to solve problems and create solutions that can make a real difference in people's lives. I am excited to bring my perspective and experience to the tech industry and look forward to learning and growing in this new chapter of my career.</p>
+    <p>When I'm not coding, you can usually find me being active. I love playing tennis, hiking in nature, cooking up new recipes, and exploring new destinations.</p>
+  </div>
+</div>
 
-<div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row align-items-center g-5 py-5">
-      <div class="col-lg-6">
-        <h3>Hello world</h3>
-        <p>I'm Daniel Nguyen, a software developer aiming to deliver innovative products that help people.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <%= link_to image_tag('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', size: '30x30'), 'github' %>
-          <%= link_to image_tag('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg', size: '30x30'), 'linkedin' %>
-        </div>
+<div class="container px-4 py-5 border-bottom" id="featured-3">
+  <h4>Work</h4>
+  <p>Fullstack web developer specializing in Javascript, React, and Ruby on Rails: </p>
+  <span>
+    <%= link_to 'Download resume', target:'_blank' %> /
+    <%= link_to 'View online', root_path %>
+  </span>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="feature col">
+      <ul>
+        <h5>Languages</h5>
+        <li><i class="devicon-javascript-plain colored"></i> Javascript</li>
+        <li><i class="devicon-css3-plain colored"></i> CSS</li>
+        <li><i class="devicon-html5-plain colored"></i> HTML</li>
+        <li><i class="devicon-ruby-plain colored"></i> Ruby</li>
+        <li><i class="devicon-python-plain colored"></i> Python</li>
+        <li><i class="devicon-postgresql-plain colored"></i> SQL(PostgreSQL)</li>
+      </ul>
+    </div>
+    <div class="feature col">
+      <ul>
+        <h5>Frameworks</h5>
+        <li><i class="devicon-rails-plain colored"></i> Rails</li>
+        <li><i class="devicon-react-original colored"></i> React</li>
+        <li><i class="devicon-express-original colored"></i> Express</li>
+        <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap</li>
+        <li><i class="devicon-nodejs-plain colored"></i> NodeJS</li>
+      </ul>
+    </div>
+    <div class="feature col">
+      <ul>
+        <h5>Dev Tools</h5>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container px-4 py-5 border-bottom" id="hanging-icons">
+  <h4>Projects</h4>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
       </div>
-      <div class="col-10 col-sm-8 col-lg-6">
-        <%= image_tag 'daniel.jpg', id: 'profile-pic' %>
+      <div>
+        <h3 class="fs-2">Featured title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="btn btn-primary">
+          Primary button
+        </a>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
+      </div>
+      <div>
+        <h3 class="fs-2">Featured title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="btn btn-primary">
+          Primary button
+        </a>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
+      </div>
+      <div>
+        <h3 class="fs-2">Featured title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="btn btn-primary">
+          Primary button
+        </a>
       </div>
     </div>
   </div>
+</div>
 
-<section class="s2">
-  <div class="main-container">
-    <div class="about-wrapper">
-      <div class="about-me">
-        <h4>About Me</h4>
-        <p>I'm a former teacher with over 10 years of experience in public schools, now making a transition into tech. Having witnessed firsthand the impact that technology can have in the classroom, I am motivated by the potential of digital innovation to transform education and improve outcomes for learners of all ages.</p>
-        <p>My goal is to use technology to solve problems and create solutions that can make a real difference in people's lives. I am excited to bring my perspective and experience to the tech industry and look forward to learning and growing in this new chapter of my career.</p>
-        <p>When I'm not coding, you can usually find me being active. I love playing tennis, hiking in nature, cooking up new recipes, and exploring new destinations.</p>
-      </div>
-      <hr>
-      <h4>Work</h4>
-      <p>Fullstack web developer specializing in Javascript, React, and Ruby on Rails: </p>
-      <span>
-        <%= link_to 'Download resume', target:'_blank' %> /
-        <%= link_to 'View online', root_path %>
-      </span>
-      <div id="skills">
-        <ul>
-          <h5>Languages</h5>
-          <li><i class="devicon-javascript-plain colored"></i> Javascript</li>
-          <li><i class="devicon-css3-plain colored"></i> CSS</li>
-          <li><i class="devicon-html5-plain colored"></i> HTML</li>
-          <li><i class="devicon-ruby-plain colored"></i> Ruby</li>
-          <li><i class="devicon-python-plain colored"></i> Python</li>
-          <li><i class="devicon-postgresql-plain colored"></i> SQL(PostgreSQL)</li>
-        </ul>
-        <ul>
-          <h5>Frameworks</h5>
-          <li><i class="devicon-rails-plain colored"></i> Rails</li>
-          <li><i class="devicon-react-original colored"></i> React</li>
-          <li><i class="devicon-express-original colored"></i> Express</li>
-          <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap</li>
-          <li><i class="devicon-nodejs-plain colored"></i> NodeJS</li>
-        </ul>
-        <ul>
-          <h5>Dev Tools</h5>
-        </ul>
-      </div>
-      <div class="social-links">
-        links
-      </div>
-    </div>
-  </div>
-</section>
+<div class="container">
+  Contact
+</div>
 
-<section class="s1">
-  <div class="main-container">
-    <h3 class="subheader">Some of my past projects</h3>
-    <div class="post-wrapper">
-      <div class="post">
-        <img class="thumbnail" src=".jpg">
-        <div class="post-preview">
-          <h6 class="post-title">Title</h6>
-          <p class="post-intro">Text</p>
-        </div>
-      </div>
-      <div class="post">
-        <img class="thumbnail" src=".jpg">
-        <div class="post-preview">
-          <h6 class="post-title">Title</h6>
-          <p class="post-intro">Text</p>
-        </div>
-      </div>
-      <div class="post">
-        <img class="thumbnail" src=".jpg">
-        <div class="post-preview">
-          <h6 class="post-title">Title</h6>
-          <p class="post-intro">Text</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="s2">
-  <div class="main-container">
-    Contact
-  </div>
-</section>
+<footer class="blog-footer">
+  <p>Portfolio by Daniel Nguyen</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
