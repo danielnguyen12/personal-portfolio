@@ -1,0 +1,20 @@
+<nav id="navbar" class="navbar navbar-dark bg-dark fixed-top navbar-expand-sm bg-body-tertiary" role="navigation">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Daniel Nguyen</a>
+      <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto my-2 my-lg-0">
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-list"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><%= link_to 'About Me', '#about', class:'dropdown-item' %></li>
+            <li><%= link_to 'Work', '#work', class:'dropdown-item' %></li>
+            <li><%= link_to 'Projects', '#projects', class:'dropdown-item' %></li>
+            <li><%= link_to 'Contact', '#contact', class:'dropdown-item' %></li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
