@@ -1,38 +1,72 @@
 <div id="projects" class="container px-4 py-5 border-bottom" id="hanging-icons">
   <h4>Projects</h4>
-  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 card-group">
+
     <div class="col d-flex align-items-start">
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top">
+      <div class="card" style="max width: 20rem;">
+        <%= image_tag 'quizzly.png', class:'card-img-top' %>
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-secondary">Live preview</a>
-          <a href="#" class="btn btn-secondary">Source code</a>
+          <h5 class="card-title">Quizzly</h5>
+          <p class="card-text">An AI-powered app which generates quizzes based on user input. This full stack Ruby on Rails app features user authentication and authorization, a PostgreSQL database which stores all quizzes, and PDF functionality for users to download/print their generated quizzes. </p>
+          <%= link_to 'Live preview', "https://quizzly.onrender.com/", target:'_blank', class:"btn btn-secondary" %>
+          <%= link_to 'Source code', "https://github.com/danielnguyen12/quizzly", target:'_blank', class:"btn btn-outline-secondary" %>
         </div>
       </div>
     </div>
+
     <div class="col d-flex align-items-start">
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top">
+      <div class="card" style="max width: 20rem;">
+        <%= image_tag 'imagegen.png', class:'card-img-top' %>
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-secondary">Live preview</a>
-          <a href="#" class="btn btn-secondary">Source code</a>
+          <h5 class="card-title">ImageGen</h5>
+          <p class="card-text">A lightweight image generation tool inspired by DALL-E 2. This NodeJS + Express app handles image generation requests to the OpenAI API, and displays the resulting image.</p>
+          <%= link_to 'Live preview', "https://imagegen.up.railway.app/", target:'_blank', class:"btn btn-secondary" %>
+          <%= link_to 'Source code', "https://github.com/danielnguyen12/dalle-clone", target:'_blank', class:"btn btn-outline-secondary" %>
         </div>
       </div>
     </div>
+
     <div class="col d-flex align-items-start">
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top">
+      <div class="card" style="max width: 20rem;">
+        <%= image_tag 'shoppinglist.png', class:'card-img-top' %>
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-secondary">Live preview</a>
-          <a href="#" class="btn btn-secondary">Source code</a>
+          <h5 class="card-title">Shopping List</h5>
+          <p class="card-text">A lightweight vanilla Javascript app to help users keep track of items to purchase at the grocery store. Simple and easy to use. </p>
+          <%= link_to 'Live preview', "shoplist.up.railway.app", target:'_blank', class:"btn btn-secondary" %>
+          <%= link_to 'Source code', "https://github.com/danielnguyen12/shopping-list", target:'_blank', class:"btn btn-outline-secondary" %>
         </div>
       </div>
     </div>
+
   </div>
+
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 card-group">
+
+    <div class="col d-flex align-items-start">
+      <div class="card" style="max width: 20rem;">
+        <%= image_tag 'flixx.png', class:'card-img-top' %>
+        <div class="card-body">
+          <h5 class="card-title">Flixx</h5>
+          <p class="card-text">A Javascript app that displays movie and TV show information. This app handles requests to TheMovieDB's API, allowing users to see what's currently playing in theaters and on TV. Also features search functionality for users to find info about specific titles.
+          <%= link_to 'Live preview', "https://quizzly.onrender.com/", target:'_blank', class:"btn btn-secondary" %>
+          <%= link_to 'Source code', "https://github.com/danielnguyen12/quizzly", target:'_blank', class:"btn btn-outline-secondary" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex align-items-start">
+      <div class="card" style="max width: 20rem;">
+        <%= image_tag 'musicplayer.png', class:'card-img-top' %>
+        <div class="card-body">
+          <h5 class="card-title">MusicPlayer</h5>
+          <p class="card-text">A minimalist music player app using the Web Audio API. The app features typical music player functionality such play, pause, next, and previous.</p>
+          <%= link_to 'Live preview', "playmusic.up.railway.app", target:'_blank', class:"btn btn-secondary" %>
+          <%= link_to 'Source code', "https://github.com/danielnguyen12/music-player", target:'_blank', class:"btn btn-outline-secondary" %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 </div>
